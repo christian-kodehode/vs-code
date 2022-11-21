@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Trebuchet MS", "Helvetica", "Tahoma", "Verdana", "Arial", sans-serif;
+  min-height: 800px;
 }
 
 h1 {
@@ -51,14 +52,14 @@ li::marker {
   content: " 🤡";
 }
 
-#h2-middle::first-letter {
+#h2-right::first-letter {
   color: yellow;
   background-color: blue;
   font-size: 1.75em;
   padding: 0 5px;
 }
 
-#h2-right::selection {
+.middle p::selection {
   color: blue;
   background-color: red;
 }
@@ -79,6 +80,7 @@ section {
 
 .sec-2 {
   transition: all 2s;
+  align-items: flex-start;
 }
 
 div {
@@ -91,8 +93,8 @@ div {
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .one {
@@ -125,7 +127,7 @@ div {
 }
 
 .sec-2:hover .one {
-  height: 150px;
+  height: 25px;
   transition-timing-function: linear;
 }
 
@@ -146,9 +148,9 @@ div {
 .sec-2:hover .four {
   background-color: green;
   height: 300px;
-  border: 10px solid red;
+  border: 5px solid red;
   color: black;
-  font-size: 16px;
+  font-size: 30px;
   transition-timing-function: ease-in-out;
 }
 
