@@ -42,13 +42,30 @@ const numToText = (input = document.getElementById("num-in").value) => {
       out = uEnere[Number(input)];
       break;
     case 2:
-      document.getElementById("test").innerText = input[1];
       if (input[1] == 0) {
         out = tiere[Number(input[0])];
       } else if (input[0] == 1) {
         out = `${teens[Number(input[1])]}`;
       } else {
-        out = `${tiere[Number(input[0])]}-${uEnere[Number(input[1])]}`;
+        out = `${tiere[Number(input[0])]} ${uEnere[Number(input[1])]}`;
+      }
+    case 3:
+      if (input[1] == 0 && input[2] == 0) {
+        out = `${bEnere[Number(input[0])]} ${h}`;
+      } else if (input[1] == 0 && input[2] != 0) {
+        out = `${bEnere[Number(input[0])]} ${h} OG ${uEnere[Number(input[2])]}`;
+      } else if (input[1] == 1) {
+        out = `${bEnere[Number(input[0])]} ${h} OG ${teens[Number(input[2])]}`;
+      } else if (input[1] > 1 && input[2] == 0) {
+        out = `${bEnere[Number(input[0])]} ${h} OG ${tiere[Number(input[1])]}`;
+      } else if (input[1] > 1 && input[2] != 0) {
+        out = `${bEnere[Number(input[0])]} ${h} OG ${tiere[Number(input[1])]} ${
+          uEnere[Number(input[2])]
+        }`;
+      }
+    case 4:
+      if (input[1] == 0 && input[2] == 0 && input[3] == 0) {
+        out = `${bEnere[Number(input[0])]} ${t}`;
       }
   }
   document.getElementById("ans").innerText = out;

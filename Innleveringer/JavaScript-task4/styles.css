@@ -34,16 +34,17 @@ hr {
 
 #bottom {
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #left {
   flex-direction: column;
-  width: 50%;
+  width: 44%;
 }
 
 #right {
   flex-direction: row;
-  width: 50%;
+  width: 44%;
 }
 
 div {
@@ -59,9 +60,12 @@ div {
   padding: 5px;
 }
 
-.code {
-  border: 1px solid black;
-  background-color: #444;
+#test {
+  min-width: 200px;
+  max-width: 400px;
+  padding: 10px;
+  font-family: "courier new", sans-serif;
+  font-size: 12px;
 }
 
 #num-in {
@@ -75,7 +79,7 @@ div {
 
 #ans {
   min-width: 100px;
-  max-width: 500px;
+  max-width: 400px;
   height: 100px;
   font-family: "courier new", sans-serif;
   font-weight: 700;
