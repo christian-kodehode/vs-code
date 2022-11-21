@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+form {
+  padding: 10px;
+}
+
+legend {
+  padding: 16px 32px;
+  background-color: darkorange;
+  border-radius: 10px;
+}
+
+fieldset {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 2em;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flex > * {
+  flex: 1 1 145px;
+}
+
+input {
+  margin-bottom: 0.75em;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}

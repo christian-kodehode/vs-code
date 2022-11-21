@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Helvetica", "Tahoma", "Verdana", "Arial", sans-serif;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+h2 {
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.top {
+  background-color: beige;
+  width: 30%;
+}
+
+.left p::first-line {
+  font-family: "Times", "Times New Roman", "Comic Sans", sans-serif;
+  font-size: 15;
+  font-weight: 700;
+  color: red;
+}
+
+li {
+  font-size: 12px;
+}
+
+li::marker {
+  color: red;
+}
+
+#h2-left::before {
+  content: "😎 ";
+}
+
+#h2-middle::after {
+  content: " 🤡";
+}
+
+#h2-middle::first-letter {
+  color: yellow;
+  background-color: blue;
+  font-size: 1.75em;
+  padding: 0 5px;
+}
+
+#h2-right::selection {
+  color: blue;
+  background-color: red;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid cyan;
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+.top {
+  padding: 10px;
+}
+
+.sec-2 {
+  transition: all 2s;
+}
+
+div {
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.sec-2 .box {
+  transition: all 3s;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: green;
+}
+
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  color: yellow;
+  font-size: 8px;
+}
+
+.five {
+  background-color: purple;
+}
+
+.six {
+  background-color: orange;
+}
+
+.sec-2:hover .one {
+  height: 150px;
+  transition-timing-function: linear;
+}
+
+.sec-2:hover .two {
+  background-color: yellow;
+  height: 200px;
+  border-radius: 25% 0% 25% 0%;
+  transition-timing-function: ease;
+}
+
+.sec-2:hover .three {
+  background-color: blue;
+  height: 250px;
+  border-radius: 50%;
+  transition-timing-function: ease-in;
+}
+
+.sec-2:hover .four {
+  background-color: green;
+  height: 300px;
+  border: 10px solid red;
+  color: black;
+  font-size: 16px;
+  transition-timing-function: ease-in-out;
+}
+
+.sec-2:hover .five {
+  background-color: orange;
+  height: 350px;
+  transition-timing-function: ease-out;
+}
+
+.sec-2:hover .six {
+  background-color: purple;
+  height: 400px;
+  transition-timing-function: cubic-bezier(0.2, 0.85, 0.1, 1);
+}

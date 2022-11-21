@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #79a5e4;
+  font-family: Calibri, Trebuchet, Helvetica, Tahoma, Verdana, sans-serif;
+}
+
+.sheet {
+  margin-top: 50px;
+  height: 1800px;
+  width: 1200px;
+  background-color: ghostwhite;
+}
+
+.top {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  width: 100%;
+  height: 500px;
+}
+
+.top-left {
+  width: 45%;
+  margin: 0 1.5%;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.profilepic {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+.contact {
+  padding: 15px 40px;
+  background-color: #fff9c2;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.contact-p {
+  display: flex;
+}
+
+.contact-p p {
+  margin-right: 15px;
+}
+
+.bold-p {
+  font-style: bold;
+}
+
+.contact-p span {
+  font-style: italic;
+}
+
+.top-right {
+  padding: 15px 40px;
+  width: 45%;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+  padding: 15px 0;
+}
+
+.box {
+  padding: 15px 40px;
+  width: 45%;
+  height: 100%;
+  background-color: #d6f9dd;
+  color: #222;
+  border-radius: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0;
+  width: 93.33%;
+  background-color: turquoise;
+  border-radius: 20px;
+}
+
+.icon {
+  width: 80px;
+}

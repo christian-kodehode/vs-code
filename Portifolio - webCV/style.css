@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* ##############################
+        TYPOGRAPHY
+############################## */
+
+.nav-sec {
+  font-family: Helvetica;
+}
+
+.nav-sec h1 {
+  text-decoration: none;
+  font-weight: 10 00;
+  font-size: 1.75em;
+}
+
+.nav-sec a {
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1.25em;
+  color: rgb(255, 255, 255);
+}
+
+.nav-sec ul {
+  list-style-type: none;
+}
+
+/* ##############################
+        DISPLAY
+############################## */
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1429704658776-3d38c9990511?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1379&q=80);
+}
+
+.nav-sec {
+  overflow: hidden;
+  background-color: #000;
+  border: 2px solid red;
+}
+
+.nav-sec ul {
+  display: inline-flex;
+  float: right;
+  height: 100%;
+  border: 2px solid magenta;
+}
+
+.nav-sec li {
+}
+
+.nav-sec h1,
+a {
+  display: inline-block;
+}
+
+.nav-sec h1 {
+  padding: 5px 0;
+  margin-left: 10%;
+  color: #fff;
+  width: 25%;
+}
+
+.nav-sec a {
+  padding: 5px;
+  width: 75%;
+}
+
+.nav-sec a:hover {
+  background-color: #fff;
+  color: #000;
+}

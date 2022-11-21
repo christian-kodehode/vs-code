@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <form action="#" method="post" id="email-collector">
+      <fieldset id="main-content">
+        <legend>Forms 101</legend>
+        <div class="checkbox">
+          <input type="checkbox" name="toggle" id="toggle-grid" />
+          <label for="toggle-grid">Grid toggled</label>
+        </div>
+        <div class="flex">
+          <div class="main-form">
+            <label for="f-name">First name</label>
+            <input
+              type="text"
+              name="first"
+              id="f-name"
+              placeholder="first name"
+              required
+              minlength="2"
+            />
+            <label for="l-name" name="last" id="l-name">Last name</label>
+            <input
+              type="text"
+              name="first"
+              id="f-name"
+              placeholder="last name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" list="default-emails" />
+            <datalist id="default-emails">
+              <option value="christianriis.kodehode@gmail.com"></option>
+              <option value="ctriis@outlook.com"></option>
+              <option value="riismeister@gmail.com"></option>
+            </datalist>
+          </div>
+          <div>
+            <label>Tlf</label>
+            <input
+              type="tel"
+              name="phone"
+              id="tel"
+              pattern="[0-9]{3} [0-9]{2} [0-9]{3}"
+              placeholer="555 88 999"
+            />
+          </div>
+          <button clss="btn main-btn" type="submit">Submit form</button>
+          <input type="reset" />
+          <input type="range" max="100" min="10" />
+          <p>We will never share your info with anyone.</p>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

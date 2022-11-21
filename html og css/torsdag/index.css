@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Tahoma;
+}
+
+.div1 {
+  /* 
+  border-style: solid;
+  border-color: black;
+  border-width: 1px; 
+  */
+  margin: 20px 10px;
+  border: solid black 5px;
+  border-radius: 5px;
+  background-color: violet;
+  width: 500px;
+}
+
+.div2 {
+  outline: 3px groove black;
+  margin-inline: 20px;
+}
+
+h1 {
+  /* 
+  martin-top: 5px;   
+  martin-left: 5px;
+  etc.
+    */
+  /* margin: 10px 10px 5px 20px; */
+  margin-inline: 100px;
+  padding: 5px 10px;
+  border: 3px solid black;
+  font-family: "Island Moments", cursive;
+}
+
+img {
+  max-width: 100%;
+
+  margin: auto;
+}
