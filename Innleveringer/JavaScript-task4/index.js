@@ -78,5 +78,10 @@ const numToText = (input = document.getElementById("num-in").value) => {
     default:
       out = err;
   }
+
+  if (Number(input) < 0) {
+    out = err;
+  }
+
   document.getElementById("ans").innerText = `${out}`;
 };
