@@ -1,4 +1,11 @@
 // js code
+/*
+const enterKey = (event) => {
+  if (event.keyCode == "Enter") {
+    numToText();
+  }
+};
+*/
 
 const numToText = (input = document.getElementById("num-in").value) => {
   const inputArray = input.split("");
@@ -6,7 +13,10 @@ const numToText = (input = document.getElementById("num-in").value) => {
   const h = "HUNDRE";
   const t = "TUSEN";
   const m = "EN MILLION";
-  const err = "INPUT MÅ VÆRE ET HELTALL MELLOM 1 OG 1 MILLION.";
+  const err = "INPUT MÅ VÆRE ET HELTALL MELLOM 0 og 999.";
+  const og = "";
+  const ogg = "";
+  const outArray = [];
   const uEnere = ["NULL", "EN", "TO", "TRE", "FIRE", "FEM", "SEKS", "SYV", "ÅTTE", "NI"];
   const bEnere = ["NULL", "ETT", "TO", "TRE", "FIRE", "FEM", "SEKS", "SYV", "ÅTTE", "NI"];
   const teens = [
@@ -49,6 +59,7 @@ const numToText = (input = document.getElementById("num-in").value) => {
       } else {
         out = `${tiere[Number(input[0])]} ${uEnere[Number(input[1])]}`;
       }
+      break;
     case 3:
       if (input[1] == 0 && input[2] == 0) {
         out = `${bEnere[Number(input[0])]} ${h}`;
@@ -63,10 +74,9 @@ const numToText = (input = document.getElementById("num-in").value) => {
           uEnere[Number(input[2])]
         }`;
       }
-    case 4:
-      if (input[1] == 0 && input[2] == 0 && input[3] == 0) {
-        out = `${bEnere[Number(input[0])]} ${t}`;
-      }
+      break;
+    default:
+      out = err;
   }
-  document.getElementById("ans").innerText = out;
+  document.getElementById("ans").innerText = `${out}`;
 };
