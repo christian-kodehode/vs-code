@@ -60,6 +60,10 @@ div {
   padding: 5px;
 }
 
+.max100 {
+  min-width: 100px;
+}
+
 #test {
   min-width: 200px;
   max-width: 400px;
@@ -83,4 +87,42 @@ div {
   height: 100px;
   font-family: "courier new", sans-serif;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+  #bottom {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #left,
+  #right {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 33px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  #left,
+  #right {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
