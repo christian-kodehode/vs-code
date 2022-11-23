@@ -9,10 +9,6 @@ body {
   min-height: 100vh;
 }
 
-#top {
-  padding: 10px 0;
-}
-
 h1 {
   font-size: 40px;
   margin: 10px 0;
@@ -32,57 +28,60 @@ hr {
   background-color: black;
 }
 
-#bottom {
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-#left {
-  flex-direction: column;
-  width: 44%;
-}
-
-#right {
-  flex-direction: column;
-  width: 44%;
-}
-
 div {
   display: flex;
 }
 
-#top {
+.container {
+  padding: 20px 0;
+}
+
+.left {
   flex-direction: column;
-  align-items: center;
+  width: 44%;
+}
+
+.right {
+  flex-direction: column;
+  width: 44%;
 }
 
 .calc {
   padding: 5px;
 }
 
-.max100 {
+.min100 {
   min-width: 100px;
 }
 
-#test {
-  min-width: 200px;
-  max-width: 400px;
-  padding: 10px;
-  font-family: "courier new", sans-serif;
-  font-size: 12px;
+#top {
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
 }
 
-#num-in {
-  min-width: 100px;
-  max-width: 300px;
+#middle {
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-#add-digits {
+/* #bottom {
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 4%;
+} */
+
+#num-in,
+#num-two {
+  max-width: 250px;
+}
+
+#add-digits,
+#primes {
   width: 100px;
 }
 
 #ans {
-  min-width: 100px;
   max-width: 400px;
   height: 100px;
   font-family: "courier new", sans-serif;
@@ -90,7 +89,7 @@ div {
 }
 
 @media only screen and (max-width: 500px) {
-  #bottom {
+  #middle {
     flex-direction: column;
   }
   h1 {
@@ -99,8 +98,8 @@ div {
   h2 {
     font-size: 24px;
   }
-  #left,
-  #right {
+  p,
+  button {
     font-size: 14px;
   }
 }
@@ -112,8 +111,8 @@ div {
   h2 {
     font-size: 22px;
   }
-  #left,
-  #right {
+  p,
+  button {
     font-size: 12px;
   }
 }
