@@ -82,7 +82,7 @@ div {
 }
 
 #ans {
-  max-width: 400px;
+  max-width: 450px;
   height: 100px;
   font-family: "courier new", sans-serif;
   font-size: 16px;
@@ -93,7 +93,7 @@ div {
     flex-direction: column;
   }
   h1 {
-    font-size: 36px;
+    font-size: 35px;
   }
   h2 {
     font-size: 24px;
@@ -106,22 +106,26 @@ div {
 
 @media only screen and (max-width: 400px) {
   h1 {
-    font-size: 33px;
+    font-size: 30px;
   }
   h2 {
     font-size: 22px;
   }
   p,
   button {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 250px) {
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h2 {
     font-size: 20px;
+  }
+  p,
+  button {
+    font-size: 12px;
   }
 }
