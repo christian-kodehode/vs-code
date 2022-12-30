@@ -48,6 +48,15 @@ img {
   color: #888;
 }
 
+.useEffect {
+  margin-bottom: 30px;
+}
+
+.counter {
+  border: 2px solid navy;
+  margin: 0 1vw;
+}
+
 .pokecard {
   border: 2px solid navy;
   background-color: lightcyan;

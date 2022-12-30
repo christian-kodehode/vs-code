@@ -15,13 +15,44 @@ function UseEffect() {
   }, []);
 
   return (
-    <div>
-      <h1>UseEffect Component</h1>
+    <div className="useEffect">
+      <h1>UseEffect Counters</h1>
+      <h2>Counter A:</h2>
       <h2>{countA}</h2>
-      <button onClick={() => setCountA((oldState) => oldState + 1)}>Increment</button>
+      <button className="counter" onClick={() => setCountA((oldState) => oldState + 1)}>
+        Increment by 1
+      </button>
+      <button className="counter" onClick={() => setCountA((oldState) => oldState - 1)}>
+        Decrease by 1
+      </button>
+      <button className="counter" onClick={() => setCountA((oldState) => oldState * countB)}>
+        Multiply by B
+      </button>
+      <button className="counter" onClick={() => setCountA((oldState) => oldState / countB)}>
+        Divide by B
+      </button>
+      <button className="counter" onClick={() => setCountA((countA) => 0)}>
+        Set to 0
+      </button>
       <br />
+      <br />
+      <h2>Counter B:</h2>
       <h2>{countB}</h2>
-      <button onClick={() => setCountB((oldState) => oldState + 1)}>Increment</button>
+      <button className="counter" onClick={() => setCountB((oldState) => oldState + 1)}>
+        Increment by 1
+      </button>
+      <button className="counter" onClick={() => setCountB((oldState) => oldState - 1)}>
+        Decrease by 1
+      </button>
+      <button className="counter" onClick={() => setCountB((oldState) => oldState * countA)}>
+        Multiply by A
+      </button>
+      <button className="counter" onClick={() => setCountB((oldState) => oldState / countA)}>
+        Divide by A
+      </button>
+      <button className="counter" onClick={() => setCountB((countA) => 0)}>
+        Set to 0
+      </button>
     </div>
   );
 }
