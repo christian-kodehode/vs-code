@@ -1,0 +1,16 @@
+:root {
+  --txt-5xs: 0.6rem;
+  --txt-4xs: 0.6rem;
+  --txt-3xs: 0.6rem;
+  --txt-2xs: 0.813rem;
+  --txt-xs: 0.875rem;
+  --txt-s: 0.938rem;
+  --txt-m: 1rem;
+  --txt-l: 1.2rem;
+  --txt-xl: 1.5rem;
+  --txt-2xl: 2rem;
+  --txt-3xl: 2.75rem;
+  --txt-4xl: 4rem;
+  --txt-5xl: 5.5rem;
+  --txt-6xl: 7rem;
+}

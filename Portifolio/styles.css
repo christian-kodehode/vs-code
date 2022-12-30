@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 500px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #6d9bf5;
+  height: 80px;
+  width: 100%;
+}
+
+.navItem {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.navItem:hover {
+  font-size: 2.2rem;
+  text-decoration-color: #0f2246;
+  text-decoration-thickness: 0.3rem;
+}
+
+.name-title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #0f2246;
+}
+
+.h3-title {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #6d9bf5;
+}
+
+.img-profilepic {
+  width: 100%;
+}
+
+.aboutContainer {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.p-about {
+  font-size: 0.875rem;
+  color: #0f2246;
+  line-height: 1.15rem;
+}
+
+.portfolioContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.h1-prosjekterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6d9bf5;
+  padding: 0 0 25x 0;
+}
+
+.h1-prosjekter {
+  font-size: 1.75rem;
+  color: white;
+  text-shadow: 0 0 5px #0f2246;
+  padding: 15px 0;
+}
+
+.projectF {
+  width: 100%;
+  height: 160px;
+  background-image: url("./pics/prosjekter/julekalender.jpg");
+  background-size: 100vw;
+  max-width: 500px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  position: absolute;
+  opacity: 0.25;
+}
+
+.projectItemFeatured,
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 160px;
+  border-bottom: 1px solid #0f2246;
+  opacity: 1;
+}
+
+.projectItemFeatured {
+  width: 100%;
+}
+
+.projectItem {
+  width: 50%;
+  background-color: #ddd;
+}
+
+.projectItem:nth-child(even) {
+  border-left: 1px solid #0f2246;
+}
+
+.h2-projectFeatured {
+  font-size: 1.75rem;
+}
+
+.h3-projectFeatured {
+  font-size: 1.25rem;
+}
+
+.h2-project {
+  font-size: 1.25rem;
+}
+
+.h3-project {
+  font-size: 0.875rem;
+}
+
+.h2-projectFeatured,
+.h3-projectFeatured,
+.h2-project,
+.h3-project {
+  text-shadow: 0 0 3px #6d9bf5;
+}
+
+.h3-projectFeatured:hover,
+.h3-project:hover {
+  text-decoration: underline;
+  color: #6d9bf5;
+  text-shadow: 0 0 3px #0f2246;
+  cursor: pointer;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #6d9bf5;
+  width: 100%;
+  padding: 15px;
+}
+
+.h2-contact {
+  font-size: 1.75rem;
+  text-shadow: 0 0 3px #0f2246;
+  margin: 0 0 20px 0;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contactLabel {
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 20%;
+}
+
+.contactInput,
+.contactMessage {
+  width: 75%;
+  margin: 5px 0;
+}
+
+.contactMessage {
+  min-height: 100px;
+}

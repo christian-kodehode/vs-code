@@ -1,0 +1,30 @@
+:root {
+  --col-blue-light-1: rgb(191, 191, 255);
+  --col-blue-light-2: rgb(127, 127, 255);
+  --col-blue-light-3: rgb(63, 63, 255);
+  --col-blue-normal: rgb(0, 0, 255);
+  --col-blue-deep-1: rgb(0, 0, 191);
+  --col-blue-deep-2: rgb(0, 0, 127);
+  --col-blue-deep-3: rgb(0, 0, 63);
+  --col-red-light-1: rgb(255, 191, 191);
+  --col-red-light-2: rgb(255, 127, 127);
+  --col-red-light-3: rgb(255, 63, 63);
+  --col-red-normal: rgb(255, 0, 0);
+  --col-red-deep-1: rgb(191, 0, 0);
+  --col-red-deep-2: rgb(127, 0, 0);
+  --col-red-deep-3: rgb(63, 0, 0);
+  --col-green-light-1: rgb(191, 255, 191);
+  --col-green-light-2: rgb(127, 255, 127);
+  --col-green-light-3: rgb(63, 255, 63);
+  --col-green-normal: rgb(0, 255, 0);
+  --col-green-deep-1: rgb(0, 191, 0);
+  --col-green-deep-2: rgb(0, 127, 0);
+  --col-green-deep-3: rgb(0, 63, 0);
+  --col-yellow-light-1: rgb(255, 255, 191);
+  --col-yellow-light-2: rgb(255, 255, 127);
+  --col-yellow-light-3: rgb(255, 255, 63);
+  --col-yellow-normal: rgb(255, 255, 0);
+  --col-yellow-deep-1: rgb(191, 191, 0);
+  --col-yellow-deep-2: rgb(127, 127, 0);
+  --col-yellow-deep-3: rgb(63, 63, 0);
+}

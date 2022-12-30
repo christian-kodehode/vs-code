@@ -1,0 +1,96 @@
+/*
+** -----NAVBAR-----
+*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--col-blue-light-3);
+}
+
+.navitems {
+  text-decoration: none;
+  height: 100%;
+  padding: 1.5rem 5rem;
+  color: #fff;
+  font-size: var(--txt-xl);
+  font-weight: 700;
+}
+
+.navitems:hover {
+  text-decoration: underline;
+  background-color: var(--col-red-deep-1);
+}
+
+/*
+** -----TITLE-----
+*/
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: var(--txt-4xl);
+  color: var(--col-blue-deep-2);
+  font-size: var(--txt-xl);
+  padding: var(--txt-m) 0;
+}
+
+/*
+** -----BUTTON-----
+*/
+
+.btn {
+  padding: 15px 25px;
+  border: 3px solid var(--col-green-deep-2);
+  border-radius: 6px;
+  background-color: var(--col-green-light-1);
+  color: var(--col-green-deep-3);
+  font-weight: 700;
+}
+
+.btn:hover {
+  border: 3px solid var(--col-red-deep-2);
+  background-color: var(--col-red-light-1);
+  color: var(--col-red-deep-3);
+  cursor: pointer;
+}
+
+/*
+** -----VELKOMMEN-----
+*/
+
+.border {
+  padding: 5px 15px;
+  background-color: var(--col-yellow-light-2);
+  border: 2px solid var(--col-yellow-deep-2);
+  border-radius: 10px;
+}
+
+/*
+** -----COMPONENTS EXCL. NAVBAR-----
+*/
+
+.comp {
+  margin: 1rem 5vw;
+}
+
+/*
+** -----"NEW COMPONENTS"-----
+*/
+
+.newP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-family: "courier new", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--col-red-deep-1);
+}

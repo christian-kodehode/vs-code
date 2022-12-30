@@ -1,0 +1,14 @@
+:root {
+  --color-primary-400: rgb(112, 112, 255);
+  --color-primary-500: rgb(0, 0, 255);
+  --color-primary-600: rgb(0, 0, 112);
+  --color-secondary-400: rgb(255, 112, 112);
+  --color-secondary-500: rgb(255, 0, 0);
+  --color-secondary-600: rgb(112, 0, 0);
+  --color-tertiary-400: rgb(112, 255, 112);
+  --color-tertiary-500: rgb(0, 255, 0);
+  --color-tertiary-600: rgb(0, 112, 0);
+  --color-quarternary-400: rgb(255, 255, 112);
+  --color-quarternary-500: rgb(255, 255, 0);
+  --color-quarternary-600: rgb(112, 112, 0);
+}

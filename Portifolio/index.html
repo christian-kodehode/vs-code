@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Christian Tørre Riis - frontend-utvikler</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+
+    <div class="navbar">
+      <div class="navItem">om meg</div>
+      <div class="navItem">prosjekter</div>
+      <div class="navItem">kontakt</div>
+    </div>
+
+    <!-- NAME & TITLE & PROFILE PICTURE -->
+
+    <div class="name-title">
+      <h1>Christian Tørre Riis</h1>
+      <h3 class="h3-title">Frontend-utvikler</h3>
+    </div>
+    <img
+      class="img-profilepic"
+      src="./pics/profil/profilepic.jpg"
+      alt="cartoon styled picture of a teenage christian riis having fun at a lan party in the late oughts"
+    />
+
+    <!-- ABOUT ME -->
+
+    <div class="aboutContainer">
+      <p class="p-about">Hei!</p>
+      <p class="p-about">
+        Jeg er 35 år gammel, født og oppvokst i Bamble, og bor nå i Porsgrunn.
+      </p>
+      <p class="p-about">
+        I øyeblikket gjennomfører jeg kurs i frontend-utvikling på Kodehode i Larvik. Det er
+        veldig moro og lærerikt, og jeg ser frem til å lære mer hver uke.
+      </p>
+      <p class="p-about">
+        Jeg liker spesielt å bruke Javascript til å lage enkle og effektive løsninger på
+        komplekse problemer.
+      </p>
+      <p class="p-about">
+        På fritiden ser jeg mye på fotball og annen sport, og jeg liker å reise og å lage mat.
+      </p>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="h1-prosjekterContainer">
+      <h1 class="h1-prosjekter">Prosjekter</h1>
+    </div>
+
+    <div class="portfolioContainer">
+      <div class="projectF"></div>
+
+      <div class="projectItemFeatured">
+        <h2 class="h2-projectFeatured">Julekalender</h2>
+        <h3 class="h3-projectFeatured">Mer info...</h3>
+      </div>
+
+      <div class="projectItem">
+        <h2 class="h2-project">CSS Advanced</h2>
+        <h3 class="h3-project">Mer info...</h3>
+      </div>
+
+      <div class="projectItem">
+        <h2 class="h2-project">Tabeller</h2>
+        <h3 class="h3-project">Mer info...</h3>
+      </div>
+
+      <div class="projectItem">
+        <h2 class="h2-project">Tall til tekst</h2>
+        <h3 class="h3-project">Mer info...</h3>
+      </div>
+
+      <div class="projectItem">
+        <h2 class="h2-project">Oppvarming</h2>
+        <h3 class="h3-project">Mer info...</h3>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="contactContainer">
+      <h2 class="h2-contact">Kontakt-skjema:</h2>
+
+      <form class="contactForm" id="contact">
+        <label class="contactLabel">Navn: </label>
+        <input type="name" class="contactInput" />
+        <label class="contactLabel">Epost: </label>
+        <input type="email" class="contactInput" />
+        <label class="contactLabel">Beskjed:</label>
+        <textarea class="contactMessage" form="contact"></textarea>
+      </form>
+    </div>
+  </body>
+</html>
