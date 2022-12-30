@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 function PokemonCard(props) {
   const [pokemonDetails, setPokemonDetails] = useState(null);
+  const imgAlt = "image of the pokemon ";
 
   useEffect(() => {
     async function getData() {
@@ -18,7 +19,10 @@ function PokemonCard(props) {
     <div className="pokecard">
       <h4>{props.name.toUpperCase()}</h4>
       {pokemonDetails ? (
-        <img src={pokemonDetails.sprites.front_default} alt="" />
+        <img
+          src={pokemonDetails.sprites.front_default}
+          alt={imgAlt + props.name.toUpperCase()}
+        />
       ) : (
         <div>Loading...</div>
       )}
