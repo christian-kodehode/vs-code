@@ -25,6 +25,7 @@ function App() {
       </Navbar>
       <h1>Hei</h1>
       <h2>Portfolio</h2>
+      <h3>test</h3>
     </div>
   );
 }
