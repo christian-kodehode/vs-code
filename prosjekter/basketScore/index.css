@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 575px;
+  margin: 0;
+  padding: 4rem;
+  background-color: #1b244a;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  margin: 1rem 0;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 12rem;
+  font-size: 5.625rem;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  color: red;
+}
+
+.home,
+.guest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 9.6875rem;
+  margin: 1rem 0;
+}
+
+.btnAdd,
+.btnReset {
+  border: 2px solid #9aabd8;
+  border-radius: 0.3125rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #9aabd8;
+  background-color: #1b244a;
+  padding: 0.5rem;
+}
+
+.btnAdd {
+  font-size: 1.125rem;
+}
+
+.btnReset {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.btnAdd:hover,
+.btnReset:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  color: #1b244a;
+  background-color: #9aabd8;
+}
